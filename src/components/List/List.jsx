@@ -4,17 +4,13 @@ import useStyles from "./styles"
 import Placedetail from "../PlaceDetails/PlaceDetails"
 
 
-const List = ({places}) => {
+const List = ({places , childClick}) => {
   const classes = useStyles();
   const [type, setType] = useState('restaurants')
   const [rating, setRating] = useState("")
 
-//  const places = [
-//    {name:"fuck"},
-//    {name: "chudina"}
-//  ]
-
   console.log(places);
+  console.log({childClick})
   return (
     <div className={classes.container}>
       <Typography>Restaurants, Hotels & Attractions around you</Typography>
